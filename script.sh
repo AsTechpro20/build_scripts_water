@@ -3,6 +3,7 @@
 # Remove some stuffs
 rm -rf .repo/local_manifests/ 
 rm -rf  vendor/xiaomi
+rm -rf  vendor/xiaomi/ims-water
 rm -rf  kernel/xiaomi
 rm -rf  device/xiaomi
 rm -rf  device/mediatek
