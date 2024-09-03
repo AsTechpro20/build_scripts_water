@@ -46,4 +46,4 @@ source build/envsetup.sh
 echo "===================================="
 echo "Building Lineage-20..."
 echo "===================================="
-brunch water-userdebug || brunch water
+brunch water-eng || brunch water
