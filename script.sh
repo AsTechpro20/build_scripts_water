@@ -1,7 +1,7 @@
 #Lineage-20 build_script_water
 
 # Remove some stuffs
-rm -rf .repo/local_manifests/ 
+rm -rf .repo/local_manifests
 rm -rf  vendor/xiaomi
 rm -rf  kernel/xiaomi
 rm -rf  device/xiaomi
@@ -11,16 +11,16 @@ echo "===================================="
 echo "Removing stuffs success..."
 echo "===================================="
 
-# Clone local_manifests repository
-git clone https://github.com/AsTechpro20/local_manifests_water.git -b Lineage-20 .repo/local_manifests
-echo "===================================="
-echo "Cloning local_manifests was success..."
-echo "===================================="
-
 # Initialize Lineage-20 repo
 repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
 echo "===================================="
 echo "Initializing Lineage-20 repo was success..."
+echo "===================================="
+
+# Clone local_manifests repository
+git clone https://github.com/AsTechpro20/local_manifests_water.git -b Lineage-20 .repo/local_manifests
+echo "===================================="
+echo "Cloning local_manifests was success..."
 echo "===================================="
 
 # Sync the repositories
